@@ -10,6 +10,8 @@ import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cartReducer";
 
 const Product = () => {
+  // console.log(REACT_APP_UPLOAD_URL)
+
   const id = useParams().id;
   const [selectedImg, setSelectedImg] = useState("img");
   const [quantity, setQuantity] = useState(1);
