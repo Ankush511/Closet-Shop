@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { makeRequest } from "../makeRequest";
 
+// const url = "http://localhost:1337/api/products";
+
 const useFetch = (url) => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
