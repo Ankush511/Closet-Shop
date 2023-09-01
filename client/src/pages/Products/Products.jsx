@@ -29,34 +29,7 @@ const Products = () => {
   return (
     <div className="products">
       <div className="left">
-        <div className="filterItem">
-          <h2>Product Categories</h2>
-          {data?.map((item) => (
-            <div className="inputItem" key={item.id}>
-              <input
-                type="checkbox"
-                id={item.id}
-                value={item.id}
-                onChange={handleChange}
-              />
-              <label htmlFor={item.id}>{item.attributes.title}</label>
-            </div>
-          ))}
-        </div>
-        <div className="filterItem">
-          <h2>Filter by price</h2>
-          <div className="inputItem">
-            <span>0</span>
-            <input
-              type="range"
-              min={0}
-              max={1000}
-              onChange={(e) => setMaxPrice(e.target.value)}
-            />
-            <span>{maxPrice}</span>
-          </div>
-        </div>
-        <div className="filterItem">
+      <div className="filterItem">
           <h2>Sort by</h2>
           <div className="inputItem">
             <input
@@ -79,6 +52,35 @@ const Products = () => {
             <label htmlFor="desc">Price (Highest first)</label>
           </div>
         </div>
+
+        <div className="filterItem">
+          <h2>Product Categories</h2>
+          {data?.map((item) => (
+            <div className="inputItem" key={item.id}>
+              <input
+                type="checkbox"
+                id={item.id}
+                value={item.id}
+                onChange={handleChange}
+              />
+              <label htmlFor={item.id}>{item.attributes.title}</label>
+            </div>
+          ))}
+        </div>
+        <div className="filterItem">
+          <h2>Filter by price</h2>
+          <div className="inputItem">
+            <span>0</span>
+            <input
+              type="range"
+              min={20}
+              max={1000}
+              onChange={(e) => setMaxPrice(e.target.value)}
+            />
+            <span>{maxPrice}</span>
+          </div>
+        </div>
+        
       </div>
       <div className="right">
         <img

@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Yatra+One&display=swap');
 
-//font variable
-$audiowide: 'Audiowide', serif;
+// //font variable
+// $audiowide: 'Audiowide', serif;
 
 .navbar {
   height: 70px;
   
-
+  
   .wrapper {
     padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    
     .item {
       display: flex;
       align-items: center;
       font-size: 18px;
     }
-
+    
     .left {
       display: flex;
       align-items: center;
       gap: 25px;
     }
     .center {
-      font-family: $audiowide;
+      a {font-family: "Audiowide" !important;}
       font-size: 30px;
       letter-spacing: 2px;
     }

@@ -95,9 +95,9 @@ const Product = () => {
               </div>
             </div>
             <div className="info">
-              <span>Vendor: Polo</span>
-              <span>Product Type: T-Shirt</span>
-              <span>Tag: T-Shirt, Women, Top</span>
+              <span>Vendor: Brand-X</span>
+              <span>Product Material: Cotton + Polyster</span>
+              <span>Country of Origin: China</span>
             </div>
             <hr />
             <div className="info">
